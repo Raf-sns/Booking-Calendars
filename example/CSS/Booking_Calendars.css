@@ -1,0 +1,65 @@
+
+/* CSS CALENDARS */
+#Booking_Calendars_Container {
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1em;
+}
+table.BC-style_calendar {
+	width: auto;
+	border: 1px solid #7c7c7c;
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-sizing: border-box;
+}
+th.BC-month_name {
+	background: #707070;
+	color: #fefefe;
+	border: 1px solid #7c7c7c;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 0.2em 0.3em;
+}
+td.BC-days_names {
+	background: #707070;
+	color: #fefefe;
+	border: 1px solid #7c7c7c;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 0.9em;
+	padding: 0;
+}
+td.BC-day {
+	background: lightgreen;
+	color: #2e2e2e;
+	border: 1px solid #7c7c7c;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	font-size: 0.9em;
+	padding: 0;
+}
+td.BC-day_left {
+	color: rgb(35 35 35 / 36%);
+}
+td.BC-booked {
+	background: orange;
+}
+td.BC-booked.BC-start {
+	background-image: linear-gradient(to left, orange 50%, lightgreen 50%);
+}
+td.BC-booked.BC-end {
+	background-image: linear-gradient(to right, orange 50%, lightgreen 50%);
+}
+/* end CSS CALENDARS */
