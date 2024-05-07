@@ -18,8 +18,9 @@ This library is very fast and was designed to avoid exponential redundancies.
 
 [Disclaimer](#disclaimer-)
 
-
+### 
 ![Booking Calendars in action](/images/Screenshot_1.png)
+###
 
 ### How to use it ?
 1. Copy or download **Booking_Calendars.min.js** in `dist/Booking_Calendars.min.js`
