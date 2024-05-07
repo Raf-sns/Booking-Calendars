@@ -3,13 +3,21 @@ A very very lightweight JavaScript library to display calendars of your online r
 This library is very fast and was designed to avoid exponential redundancies.
 
 **See on this page :**
+
 [How to use it](#how-to-use-it-)
+
 [App Documentation](#app-documentation-)
+
 [Example of the Options object](#example-of-the-options-object-)
+
 [About Booking Calendars CSS](#about-booking-calendars-css-)
+
 [Example](#example-)
+
 [License](#license-)
+
 [Disclaimer](#disclaimer-)
+
 
 ![Booking Calendars in action](/images/Screenshot_1.png)
 
