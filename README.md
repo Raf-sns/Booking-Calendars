@@ -1,5 +1,5 @@
 ## Booking Calendars
-A very very lightweight JavaScript library (only 2.34 KB !) to display calendars of your online reservations.
+A very very lightweight JavaScript library (only 2.35 KB !) to display calendars of your online reservations.
 This library is very fast and was designed to avoid exponential redundancies.
 
 **See on this page :**
