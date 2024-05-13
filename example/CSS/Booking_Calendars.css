@@ -23,11 +23,9 @@ th.BC-month_name {
 	color: #fefefe;
 	border: 1px solid #7c7c7c;
 	text-align: center;
-	width: 40px;
-	height: 40px;
 	font-size: 1em;
 	font-weight: 400;
-	padding: 0.2em 0.3em;
+	padding: 0.4em;
 }
 td.BC-days_names {
 	background: #707070;
