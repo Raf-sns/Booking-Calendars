@@ -5,7 +5,7 @@
  * @Organisation SNS - Web et informatique
  * @Web www.sns.pm
  * Vanilla javaScript for display reserved dates in calendars
- * Version: 2.0.0 (07/05/2024)
+ * Version: 3.0.0 (13/05/2024) [dd/mm/yyyy]
  */
 
 
@@ -110,9 +110,10 @@ const Booking_calendars = (Element, Options) => {
 
 
 	// define a range of months with a range if necessary
+	// !note: slice() exclude the 2nd parameter
 	let Array_months = (!Options.months_range) ?
 		Options.names_months :
-		Options.names_months.slice(Options.months_range[0], Options.months_range[1]);
+		Options.names_months.slice(Options.months_range[0], Options.months_range[1] + 1);
 
 	let Current_month = Options.names_months.indexOf(Array_months[0]);
 	let Calendar,
@@ -134,7 +135,7 @@ const Booking_calendars = (Element, Options) => {
 		Booked;
 
 	// loop all months
-	for (var i = 0; i <= Array_months.length - 1; i++) {
+	for (var i = 0; i < Array_months.length; i++) {
 
 		// create one Calendar
 		Calendar = document.createElement('table');

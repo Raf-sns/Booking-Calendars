@@ -1,17 +1,26 @@
 ## Booking Calendars
-A very very lightweight JavaScript library to display calendars of your online reservations.
+A very very lightweight JavaScript library (only 2.34 KB !) to display calendars of your online reservations.
 This library is very fast and was designed to avoid exponential redundancies.
 
 **See on this page :**
+
 [How to use it](#how-to-use-it-)
+
 [App Documentation](#app-documentation-)
+
 [Example of the Options object](#example-of-the-options-object-)
+
 [About Booking Calendars CSS](#about-booking-calendars-css-)
+
 [Example](#example-)
+
 [License](#license-)
+
 [Disclaimer](#disclaimer-)
 
+###
 ![Booking Calendars in action](/images/Screenshot_1.png)
+###
 
 ### How to use it ?
 1. Copy or download **Booking_Calendars.min.js** in `dist/Booking_Calendars.min.js`
@@ -41,27 +50,27 @@ Object **Options = { };**
 | :--- | :--- |
 |`names_months`|An array containing the names of the months of the year, according to the desired language. ex.: `['January', 'February', 'March', 'April','May', 'June','July', 'August','September', 'October', 'November', 'December']` |
 `names_days` | An Array containing the first letters of the names of the days of the week, depending on the desired language. ex.: `['M', 'T', 'W', 'T', 'F', 'S', 'S']` |
-`months_range` | The desired monthly range, in array with 2 digits, if you want to display only a monthly range. ex. `[0,6]` to display only the first six months of the year. Pass here `false` as a parameter if you want to display all months of the year. |
+`months_range` | The desired monthly range, in array with 2 digits, if you want to display only a monthly range. ex. `[0,5]` to display only the first six months of the year. Pass here `false` as a parameter if you want to display all months of the year. **Note: the month range is managed as in JavaScript: 0 = January**|
 `year` | Year as a 4-character string ex. `'2024'` or `false` to display calendars for the current year. |
-`booked_dates` | An array of reserved date objects with 2 parameters: `date_start` and `date_end`, manage to obtain this data from your database, or pass it raw in the table ex.: `[ {date_start: '2024-03-01',date_end: '2024-03-04',},{start_date: '2024-03-04',date_end: '2024-03-08',}, ... ]`. **Note:** Dates formats must respect the `yyyy-mm-dd` format, like a classic date format in a database. |
+`booked_dates` | An array of reserved date objects with 2 parameters: `date_start` and `date_end`, manage to obtain this data from your database, or pass it raw in the array ex.: `[ {date_start: '2024-03-01',date_end: '2024-03-04',},{start_date: '2024-03-04',date_end: '2024-03-08',}, ... ]`. **Note:** Dates formats must respect the `yyyy-mm-dd` format, like a classic date format in a database. |
 
 ### Example of the Options object :
 ```
 var Options = {
     // set month names
-	names_months: [
-		'January', 'February', 'March', 'April',
-		'May', 'June', 'July', 'August',
-		'September', 'October', 'November', 'December'
-	],
-	// set day names
-	names_days: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-	// false or array of numbers: ex. [0,6] -> only first 6 months
-	months_range: false, // [3,9] || false
-	// year to process: Year in string 'yyyy' OR false for current year
-	year: '2024', // 'yyyy' || false
-	// objects array of booked dates
-	booked_dates : [
+    names_months: [
+	'January', 'February', 'March', 'April',
+	'May', 'June', 'July', 'August',
+	'September', 'October', 'November', 'December'
+    ],
+    // set day names
+    names_days: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    // false or array of numbers: ex. [0,5] -> only first 6 months
+    months_range: false, // [0,5] || false
+    // year to process: Year in string 'yyyy' OR false for current year
+    year: '2024', // 'yyyy' || false
+    // objects array of booked dates
+    booked_dates : [
     {
       date_start : '2024-03-01',
       date_end : '2024-03-04',
